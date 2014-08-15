@@ -57,6 +57,7 @@ AddPPA() {
 		# -y argument will not ask for confirmation
 		#add-apt-repository -y ppa:$1
 		add-apt-repository ppa:$1
+		apt-get update
 	fi
 }
 
