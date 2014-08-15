@@ -13,8 +13,8 @@ terminatorExists=$( CheckPkgInRepos terminator gnome )
 if [ "$terminatorExists" != "1" ]; then
 	echo "installing terminator from its own repository"
 	#add-apt-repository ppa:gnome-terminator
+	#apt-get update
 	AddPPA gnome-terminator
-	apt-get update
 	apt-get install terminator
 else
 	echo "installing terminator from default repositories"
