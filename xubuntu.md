@@ -63,3 +63,11 @@ export GOPATH=$HOME/dev/go
 export GOROOT=/opt/go
 export PATH=$PATH:$GOROOT/bin
 ```
+
+#### Erlang/Elixir
+
+```
+wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
+sudo apt-get update
+sudo apt-get install esl-erlang elixir
+```
