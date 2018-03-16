@@ -76,6 +76,20 @@ export GOROOT=/opt/go
 export PATH=$PATH:$GOROOT/bin
 ```
 
+In `Sublime Text 3` after installing `GoSublime`, open the package preferences and enter:
+
+```
+{
+
+	// you may set specific environment variables here
+	// e.g "env": { "PATH": "$HOME/go/bin:$PATH" }
+	// in values, $PATH and ${PATH} are replaced with
+	// the corresponding environment(PATH) variable, if it exists.
+	"env": {"GOPATH": "$HOME/dev/go", "GOROOT": "/opt/go", "PATH": "$GOPATH/bin:$PATH" },
+	"fmt_cmd": ["goimports"]
+}
+```
+
 #### Erlang/Elixir
 
 ```
