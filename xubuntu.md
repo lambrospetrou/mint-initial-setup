@@ -71,3 +71,13 @@ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo 
 sudo apt-get update
 sudo apt-get install esl-erlang elixir
 ```
+
+#### AWS CLI
+
+https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html
+
+In `.bash_lp_config`:
+
+```
+export PATH=~/.local/bin:$PATH
+```
