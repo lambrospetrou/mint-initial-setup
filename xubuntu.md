@@ -29,6 +29,18 @@ cp -r ~/Downloads/source-sans-pro-2.020R-ro-1.075R-it ~/.fonts/
 sudo fc-cache
 ```
 
+**Insync**
+
+Google Drive syncing https://www.insynchq.com/downloads
+
+In order to mount the `Data` partition on boot:
+
+```
+sudo vim /etc/rc.local
+
+sudo mount /dev/sdb4 /media/Data
+```
+
 ### ~/.bash_lp_config
 
 The file `~/.bash_lp_config` holds all custom exports we need for shell.
