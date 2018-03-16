@@ -28,3 +28,38 @@ cp -r ~/Downloads/source-sans-pro-2.020R-ro-1.075R-it ~/.fonts/
 # Update font cache
 sudo fc-cache
 ```
+
+### ~/.bash_lp_config
+
+The file `~/.bash_lp_config` holds all custom exports we need for shell.
+
+Inside the `.bashrc` put the following:
+
+```
+## Lambros specifics shell configuration
+if [ -f ~/.bash_lp_config ]; then
+     source ~/.bash_lp_config
+fi
+```
+
+### Languages / SDKs
+
+All custom languages and sdks should be installed inside `/opt/`.
+
+#### Go
+
+https://golang.org/doc/install
+
+```
+# After downloading the version we want
+sudo tar -C /opt/ -xzf go$VERSION.$OS-$ARCH.tar.gz
+```
+
+In `.bash_lp_config`:
+
+```
+# Golang
+export GOPATH=$HOME/dev/go
+export GOROOT=/opt/go
+export PATH=$PATH:$GOROOT/bin
+```
