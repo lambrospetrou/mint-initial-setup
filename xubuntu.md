@@ -72,6 +72,13 @@ sudo apt-get update
 sudo apt-get install esl-erlang elixir
 ```
 
+#### Racket
+
+```
+sudo add-apt-repository ppa:plt/racket
+sudo apt-get update && sudo apt install racket
+```
+
 #### AWS CLI
 
 https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html
