@@ -74,6 +74,27 @@ sudo apt-get install esl-erlang elixir
 
 #### Racket
 
+Download latest version from https://download.racket-lang.org/
+
+```
+cd ~/Downloads
+chmod +x racket-6.12-x86_64-linux.sh
+sudo ./racket-6.12-x86_64-linux.sh
+
+# Q: Do you want a Unix-style distribution?
+# - NO
+# Q: Where do you want to install the "racket" directory tree?
+# - /opt/racket
+```
+
+In `.bash_lp_config`:
+
+```
+export PATH=$PATH:/opt/racket/bin
+```
+
+or from PPA
+
 ```
 sudo add-apt-repository ppa:plt/racket
 sudo apt-get update && sudo apt install racket
