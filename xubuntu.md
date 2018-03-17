@@ -13,6 +13,13 @@ sudo apt-get update && sudo apt-get install albert
 sudo add-apt-repository ppa:gnome-terminator
 sudo apt-get update && sudo apt-get install terminator
 ```
+
+**Guake terminal**
+
+```
+sudo apt install guake
+```
+
 **Adobe fonts**
 
 ```
