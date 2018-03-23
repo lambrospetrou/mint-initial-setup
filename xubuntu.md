@@ -28,9 +28,11 @@ cd ~/.fonts
 
 # Download from https://github.com/adobe-fonts/source-sans-pro/releases/
 # Download from https://github.com/adobe-fonts/source-code-pro/releases/
+# Download from https://github.com/adobe-fonts/source-serif-pro/releases
 # Unzip the files and then move them to `~/.fonts`
 cp -r ~/Downloads/source-code-pro-2.030R-ro-1.050R-it ~/.fonts/
 cp -r ~/Downloads/source-sans-pro-2.020R-ro-1.075R-it ~/.fonts/
+cp -r ~/Downloads/source-serif-pro-2.000R ~/.fonts/
 
 # Update font cache
 sudo fc-cache
