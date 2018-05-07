@@ -135,6 +135,19 @@ sudo add-apt-repository ppa:plt/racket
 sudo apt-get update && sudo apt install racket
 ```
 
+#### Haskell
+
+Downloaded the Haskell Platform: https://www.haskell.org/platform/linux.html#linux-generic
+
+Changed the `install-haskell-platform.sh` file to install in `/opt/haskell` instead of `/usr/local/haskell`:
+
+```
+absVersionDir="/opt/haskell/ghc-8.4.2-x86_64"
+...
+if ! tar -xf "$usr_local_tar" --strip-components=2 -C /opt; then
+
+```
+
 #### AWS CLI
 
 https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html
