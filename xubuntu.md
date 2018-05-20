@@ -135,6 +135,20 @@ sudo add-apt-repository ppa:plt/racket
 sudo apt-get update && sudo apt install racket
 ```
 
+#### Python3
+
+https://github.com/pyenv/pyenv-installer
+
+```
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+
+v = 3.6.5 # or newer
+pyenv install "$v"
+pyenv global "$v"
+```
+
+After make virtual envs with `python3 -m venv <dir-name>`. 
+
 #### Haskell
 
 Downloaded the Haskell Platform: https://www.haskell.org/platform/linux.html#linux-generic
