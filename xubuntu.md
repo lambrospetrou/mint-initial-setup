@@ -158,7 +158,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
 
-After make virtual envs with `python3 -m venv <dir-name>`. 
+After make virtual envs with `python3 -m venv <dir-name>` ([see docs](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)). Install dependencies using `python3 -m pip install xxx`, after you have activated the venv (`source bin/activate`), or using [pipenv](https://packaging.python.org/tutorials/managing-dependencies/#managing-dependencies) which handles the venv activation.
 
 #### Haskell
 
