@@ -142,6 +142,9 @@ https://github.com/pyenv/pyenv-installer
 ```
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
+# install the following before installing any Python version
+sudo apt install libsqlite3-dev libreadline-dev libbz2-dev
+
 v = 3.6.5 # or newer
 pyenv install "$v"
 pyenv global "$v"
