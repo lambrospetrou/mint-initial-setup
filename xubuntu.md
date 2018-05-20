@@ -150,6 +150,14 @@ pyenv install "$v"
 pyenv global "$v"
 ```
 
+In `~/.bash_lp_config`: 
+
+```
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```
+
 After make virtual envs with `python3 -m venv <dir-name>`. 
 
 #### Haskell
