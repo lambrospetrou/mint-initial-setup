@@ -182,6 +182,19 @@ if ! tar -xf "$usr_local_tar" --strip-components=2 -C /opt; then
 
 ```
 
+#### Java OpenJDK
+
+```
+wget https://download.java.net/java/GA/jdk10/10.0.2/19aef61b38124481863b1413dce1855f/13/openjdk-10.0.2_linux-x64_bin.tar.gz
+
+tar -xzf openjdk-10.0.2_linux-x64_bin.tar.gz
+
+sudo update-alternatives --install /usr/bin/java java /opt/jvm/jdk-10.0.2/bin/java 1 && sudo update-alternatives --install /usr/bin/javac javac /opt/jvm/jdk-10.0.2/bin/javac 1 && sudo update-alternatives --install /usr/bin/jar jar /opt/jvm/jdk-10.0.2/bin/jar 1
+
+sudo update-alternatives --config javac && sudo update-alternatives --config java && sudo update-alternatives --config jar
+```
+
+
 #### AWS CLI
 
 https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html
