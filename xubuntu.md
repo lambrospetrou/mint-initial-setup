@@ -67,6 +67,15 @@ fi
 
 All custom languages and sdks should be installed inside `/opt/`.
 
+Use a single user:
+
+```
+mkdir -p /opt
+sudo chown -R `whoami`:`whoami` /opt
+```
+
+or use a group:
+
 ```
 mkdir -p /opt
 sudo groupadd devs
