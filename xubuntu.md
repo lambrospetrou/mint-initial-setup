@@ -63,6 +63,21 @@ if [ -f ~/.bash_lp_config ]; then
 fi
 ```
 
+#### Terminal colors
+
+```
+wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark  
+mv dircolors.256dark .dir_colors
+```
+
+Add the following to `~/.bash_lp_config`
+
+```
+if [ -f ~/.dir_colors ]; then  
+  eval `dircolors ~/.dir_colors`
+fi 
+```
+
 ### Languages / SDKs
 
 All custom languages and sdks should be installed inside `/opt/`.
