@@ -83,6 +83,10 @@ sudo usermod -a -G devs `whoami`
 sudo chown -R `whoami`:devs /opt
 ```
 
+#### Node
+
+https://gist.github.com/lambrospetrou/db6a572a33a7aa7d023d6981bc733fc8#file-install-nodejs-n-amazon-linux-md
+
 #### Go
 
 https://golang.org/doc/install
