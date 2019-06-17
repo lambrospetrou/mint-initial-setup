@@ -233,18 +233,18 @@ if ! tar -xf "$usr_local_tar" --strip-components=2 -C /opt; then
 
 ```
 
-#### Java OpenJDK
+#### Java OpenJDK / Kotlin / Clojure
+
+https://sdkman.io/
 
 ```
-wget https://download.java.net/java/GA/jdk10/10.0.2/19aef61b38124481863b1413dce1855f/13/openjdk-10.0.2_linux-x64_bin.tar.gz
+curl -s "https://get.sdkman.io" | bash
 
-tar -xzf openjdk-10.0.2_linux-x64_bin.tar.gz
+sdk install kotlin
 
-sudo update-alternatives --install /usr/bin/java java /opt/jvm/jdk-10.0.2/bin/java 1 && sudo update-alternatives --install /usr/bin/javac javac /opt/jvm/jdk-10.0.2/bin/javac 1 && sudo update-alternatives --install /usr/bin/jar jar /opt/jvm/jdk-10.0.2/bin/jar 1
-
-sudo update-alternatives --config javac && sudo update-alternatives --config java && sudo update-alternatives --config jar
+# default is Azul Zulu (or `java 12.0.1-open`)
+sdk install java
 ```
-
 
 #### AWS CLI
 
