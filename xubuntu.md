@@ -246,6 +246,20 @@ sdk install kotlin
 sdk install java
 ```
 
+#### Ruby / JRuby
+
+Use `rvm` to manage different versions.
+
+```
+curl -sSL https://get.rvm.io | bash -s stable
+
+rvm install 2.6
+rvm install jruby
+
+rvm list
+rvm use <version here>
+```
+
 #### AWS CLI
 
 https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html
